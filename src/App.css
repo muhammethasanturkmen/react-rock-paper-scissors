@@ -1,0 +1,282 @@
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body {
+  background-color: #1F3757;
+}
+
+.container {
+  width: 1440px;
+  margin-inline: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  border: solid 3px rgba(255, 255, 255, 0.29);
+  margin-bottom: 64px;
+  border-radius: 7px;
+  padding: 27px 33px;
+}
+
+
+
+.content button {
+  border: none;
+  background-color: #1F3757;
+}
+
+.content-start {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+
+.content-end {  
+  display: flex;
+  justify-content: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer a {
+  font-family: "Barlow Semi Condensed" , sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: 2.5px;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+  border: solid 1px #FFFFFF;
+  border-radius: 7px;
+  padding: 11px 20px;
+}
+
+/* pre */
+
+
+.pre-text {
+  display: flex;
+  justify-content: center;
+  gap: 125px;
+  margin-bottom: 64px;
+}
+
+.pre-text p {
+  font-family: "Barlow Semi Condensed" , sans-serif;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+/* pre-2 */
+
+
+
+
+
+.pre-text-two {
+  display: flex;
+  justify-content: center;
+  gap: 420px;
+  margin-bottom: 64px;
+}
+
+.pre-text-two p {
+  font-family: "Barlow Semi Condensed" , sans-serif;
+  line-height: 32px;
+  letter-spacing: 3px;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+.win {
+  align-items: center;
+}
+
+.win h2 {
+  font-family: "Barlow Semi Condensed" , sans-serif;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+}
+
+.win a {
+  display: flex;
+  justify-content: center;
+  font-family: "Barlow Semi Condensed" , sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.2px;
+  letter-spacing: 2.5px;
+  text-decoration: none;
+  color: rgba(59, 66, 98, 1);
+  background-color: #FFFFFF;
+  padding: 15px 60px;
+  border-radius: 6px;
+}
+
+@media (width <= 375px) {
+  .container {
+    width: 375px;
+    margin-inline: auto;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    border: solid 3px rgba(255, 255, 255, 0.29);
+    margin-bottom: 64px;
+    border-radius: 7px;
+    padding: 27px 33px;
+  }
+  
+  
+  .content button {
+    border: none;
+    background-color: #1F3757;
+  }
+  
+  .content-start {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+  }
+  
+  
+  .content-end {  
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .footer a {
+    font-family: "Barlow Semi Condensed" , sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    letter-spacing: 2.5px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+    border: solid 1px #FFFFFF;
+    border-radius: 7px;
+    padding: 11px 20px;
+  }
+  
+  /* pre */
+  
+  
+  .pre-text {
+    display: flex;
+    justify-content: center;
+    gap: 125px;
+    margin-bottom: 64px;
+  }
+  
+  .pre-text p {
+    font-family: "Barlow Semi Condensed" , sans-serif;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  
+  /* pre-2 */
+  
+  
+  .pre-text-two {
+    display: flex;
+    justify-content: center;
+    gap: 420px;
+    margin-bottom: 64px;
+  }
+  
+  .pre-text-two p {
+    font-family: "Barlow Semi Condensed" , sans-serif;
+    line-height: 32px;
+    letter-spacing: 3px;
+    text-align: left;
+    color: #FFFFFF;
+  }
+  
+  .win {
+    align-items: center;
+  }
+  
+  .win h2 {
+    font-family: "Barlow Semi Condensed" , sans-serif;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 67.2px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+  }
+  
+  .win a {
+    display: flex;
+    justify-content: center;
+    font-family: "Barlow Semi Condensed" , sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.2px;
+    letter-spacing: 2.5px;
+    text-decoration: none;
+    color: rgba(59, 66, 98, 1);
+    background-color: #FFFFFF;
+    padding: 15px 60px;
+    border-radius: 6px;
+  } 
+}
